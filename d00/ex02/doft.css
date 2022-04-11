@@ -1,0 +1,67 @@
+#invisible {
+    width: 0px;
+}
+
+.top {
+
+}
+
+#top-img{
+
+}
+
+#loupe{
+
+}
+
+.left {
+
+}
+
+.left-img {
+    height: 100px;
+    margin: 10% 30% 0%;
+}
+
+.right {
+
+}
+
+#help {
+    height: 100px;
+    margin: 10% 30% 0%;
+}
+
+#clean {
+    height: 50px;
+    margin: 10% 30% 0%;
+}
+
+#stuck{
+    height: 150px;
+    margin: 10% 10% 0%;
+}
+
+
+
+.middle {
+    
+}
+
+#cluster {
+    height: 97%;
+    width: 97%;
+    margin: 10px 10px;
+}
+
+.pop-up {
+    background-color: #88FF88;
+}
+
+#dialog{
+
+}
+
+#button{
+    
+}
