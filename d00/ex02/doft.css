@@ -61,10 +61,10 @@ p{
 
 .left {
     background-color: #909090;
-    width: 8%;
-	position: relative;
+    width: 7%;
     height: 50%;
-    margin: 0 10%;
+	position: relative;
+    margin: 0 0 0 15%;
     border-radius: 10px;
     float: left;
     box-shadow: 10px;
@@ -84,11 +84,11 @@ p{
 .middle {
     position: relative;
     background-color: #909090;
-    width: 50%;
+    width: 53%;
     float: left;
     border-radius: 10px;
     height: 600px;
-    margin: 0 30px 60px 30px;
+    margin: 0 0 0 1%;
     box-shadow: 10px;
 }
 
@@ -107,38 +107,40 @@ p{
 
 .right {
     background-color: #909090;
-    width: 8%;
+    width: 7%;
 	position: relative;
-    height: 50%;
-    margin: 0 10%;
+    height: 450px;
+    margin: 0 15% 0 0;
     border-radius: 10px;
     float: right;
     box-shadow: 10px;
 }
 
-#help {
+#book {
     height: 100px;
-    margin: 10% 30% 0%;
+    margin: 10% 25% 5%;
 }
 
-#clean {
-    height: 50px;
-    margin: 10% 30% 0%;
+#towel {
+    height: 55px;
+    margin: 5% 20% 5%;
 }
 
-#stuck{
-    height: 150px;
-    margin: 10% 10% 0%;
+#wall{
+    height: 15%;
+    width: 85%;
+    margin: auto;
+    position: relative;
+    background-image: url("resources/brick.jpg");
 }
-
 
 .pop-up {
     background-color: #88FF88;
     position: absolute;
 	top: 700px;
 	left: 180px;
-	width: 25%;
-	height: 22%;
+	width: 30%;
+	height: 25%;
 	border-radius: 8px;
 	box-shadow: 9px 9px 9px;
 }
@@ -154,16 +156,16 @@ p{
 
 #dialog{
     position: absolute;
-	top: 55%;
+	top: 65%;
 	left: 10px;
-	width: 70%;
+	width: 60%;
 	height: 10%;
 	border-top: 2px solid grey;
 }
 
 #button{
     position: absolute;
-	top: 55%;
+	top: 65%;
 	left: 360px;
 	vertical-align: middle;
 }
