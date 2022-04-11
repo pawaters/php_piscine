@@ -1,0 +1,67 @@
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+h2 {
+        text-align:center;
+        font-weight: bold;
+        margin:6px;
+    }
+
+.container {
+
+}
+
+.color-table {
+    margin: auto auto 2%;
+    width: 80%;
+    height: 10%;
+}
+
+.periodic-table{
+    margin: auto;
+    max-width: 100;
+    width: 90%;
+}
+
+p.symbol {
+    text-align: center;
+    font-weight: bold;
+}
+p.mass {
+    float: right;
+    font-size: 10px;
+}
+p.id {
+    float:left;
+    font-size: 10px;
+}
+td {
+        min-width: 50px;
+    }
+    td.halogen {
+        background-color: #347d35;
+    }
+    td.noble-gas {
+        background-color: #c6bbbb;
+    }
+    td.alkali-metal {
+        background-color: #f4f40c;
+    }
+    td.alkaline-earth {
+        background-color: #f38208;
+    }
+    td.other-nonmetal {
+        background-color: #f30e0e;
+    }
+    td.transition {
+        background-color: #93698e;
+    }
+    td.other-metal {
+        background-color: #d66c9f;
+    }
+    td.lanthanoid{
+        background-color: #ede796;
+    }
+    td.actinoid {
+        background-color: #4b7482;
+    }
