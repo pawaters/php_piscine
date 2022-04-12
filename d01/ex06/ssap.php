@@ -16,5 +16,4 @@ if ($argc > 1)
         echo "$array[$i]\n";
 }
 
-
 ?>
