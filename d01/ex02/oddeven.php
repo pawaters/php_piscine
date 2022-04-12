@@ -8,9 +8,9 @@ function mod2($nb) {
         echo "The number " . $nb . " is even\n";
 }
 
-echo "Enter a number: ";
 while (true)
 {
+    echo "Enter a number: ";
     $buf = trim(fgets(STDIN)); 
     if (feof(STDIN))
         break;
@@ -18,7 +18,6 @@ while (true)
         mod2($buf);
     else   
         echo "'" . $buf . "' is not a number\n";
-    echo "Enter a number: ";
 }
 echo "\n";
 ?>
