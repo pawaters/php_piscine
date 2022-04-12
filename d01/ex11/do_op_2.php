@@ -1,9 +1,8 @@
 #!/usr/local/bin/php
-
 <?php
 if ($argc == 2)
 {
-    $input = trim(preg_replace('/ +/', "", $argv[1]));
+    $input = trim(preg_replace('/\s+/', "", $argv[1]));
     if (!preg_match('/^[0-9]+[%*+\-\/][0-9]+$/', $input))
     {
         exit("Syntax Error\n");
@@ -11,7 +10,6 @@ if ($argc == 2)
 
     $op = strpbrk($input, "+-*/%");
     $nb = preg_split('/[%*+\-\/]/', $input);
- 
 
     switch ($op[0])
         {
@@ -30,11 +28,10 @@ if ($argc == 2)
             case "%":
                 echo $nb[0] % $nb[1] . "\n";
                 break;
-            default:
-                echo "Incorrect Parameters\n";
         }
 }
 else
+{
     echo "Incorrect Parameters\n";
-
+}
 ?>
