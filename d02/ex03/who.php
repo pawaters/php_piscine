@@ -6,8 +6,8 @@
         while ($who = fread($fh, 628))
         {
             date_default_timezone_set('Europe/Helsinki');
-            $who = unpack("a256u/a4tid/a32tname/ilog/iunk/itstamp/", $who);
-            if ($who['unk'] == 7)
+            $who = unpack("a256u/a4tid/a32tname/ipid/ilogintype/itstamp/", $who);
+            if ($who['logintype'] == 7)
             {
                 echo trim($who['u']) . str_repeat(' ', 6);
                 echo trim($who['tname']) . str_repeat(' ', 2);
