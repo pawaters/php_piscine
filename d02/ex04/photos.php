@@ -1,7 +1,10 @@
-#!/usr/local/bin/php
+#!/usr/bin/php
 <?php
 
-$page = file_get_contents($argv[1]);
+if ($argc !=2)
+    exit(1);
+if (!$page = file_get_contents($argv[1]))
+    exit(1);
 preg_match_all("/<img .*?>/", $page, $array);
 
 $url = preg_replace('/\/$/', '', $argv[1]);

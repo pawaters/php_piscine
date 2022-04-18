@@ -1,4 +1,4 @@
-#!/usr/local/bin/php
+#!/usr/bin/php
 <?php
     function ft_check_datetime_format($str)
     {
@@ -27,6 +27,8 @@
         return ($months_array_FR[$month_input]);
     }
 
+    if ($argc != 2)
+        exit(1);
     if ($argc == 2)
     {
         ft_check_datetime_format($argv[1]);
@@ -38,10 +40,5 @@
         $time = $array[4];
         $unix_timestamp = strtotime($year . '-' . $month . '-' . $day . ' ' . $time);
         echo $unix_timestamp . "\n";
-        print_r($array);
-        echo "day: " . $day . "\n";
-        echo "month: " . $month . "\n";
-        echo "year: " . $year . "\n";
-        echo "time: " . $time . "\n";
     }
 ?>

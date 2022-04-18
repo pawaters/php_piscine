@@ -1,10 +1,13 @@
-#!/usr/local/bin/php
+#!/usr/bin/php
 <?php
 
     function ft_upcase($matches)
     {
         return (str_replace($matches[1], strtoupper($matches[1]), $matches[0]));
     }
+
+    if ($argc != 2 || !file_exists($argv[1]))
+        exit(1);
 
     if ($argc == 2)
     {
