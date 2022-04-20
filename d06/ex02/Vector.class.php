@@ -15,7 +15,7 @@
 
         public static function doc()
         {
-            return file_get_contents('Vector.doc.txt') . PHP_EOL;
+            echo (PHP_EOL . file_get_contents('Vector.doc.txt') . PHP_EOL);
         }
 
         public function __toString()
