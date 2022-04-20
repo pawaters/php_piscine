@@ -11,6 +11,7 @@ Returns the length of the vector. formula =√(x^2 + y^2 + z^2)
 
 Vector normalize();
 take the vector, keep it pointing in same direction, change length to 1.
+To do that, you need to divide each dimension by the magnitude.
 If the vector is already normalized, it returns a fresh copy of the vector.
 
 Vector add( Vector $rhs );

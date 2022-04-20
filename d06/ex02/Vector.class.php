@@ -77,7 +77,7 @@
         public function normalize() 
 		{
 			$len = $this->magnitude();
-			if ($len <= 0)
+			if ($len == 0)
 				$len = 1;
 			$newVector = new Vector(array('dest' => new Vertex([
 				'x' => $this->_x / $len,
