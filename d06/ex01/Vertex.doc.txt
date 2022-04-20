@@ -1,5 +1,5 @@
 <- Vertex ----------------------------------------------------------------------
-The Vertex class represents a point, usually on a vector.
+The Vertex class represents a point, on a vector.
 It will havet the 3 usual coordinates, as well as w, which I undersand as the
 coefficient you can easily apply to the coordinates for differentical geometrical
 manipulations: transpositions, rotations etc...
