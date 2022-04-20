@@ -11,12 +11,12 @@
         public static function doc()
         {
             if (file_exists("Color.doc.txt"))
-				return file_get_contents("Color.doc.txt");
+				echo (PHP_EOL . file_get_contents("Color.doc.txt") . PHP_EOL);
         }
 
         public function __toString()
         {
-            return(sprintf("Color( red: %3d, green: %3d, blue: %3d)", $this->red, $this->green, $this->blue));
+            return(sprintf("Color( red: %3d, green: %3d, blue: %3d )", $this->red, $this->green, $this->blue));
         }
 
         public function __construct(array $color)
@@ -69,15 +69,14 @@
             return ($newColor);
         }
         
-        public function multi(Color $multi_color)
+        public function mult($multiplier)
         {
             $newColor = new Color([
-                'red' => $this->red * $sub_color->red,
-                'green' => $this->green * $sub_color->green,
-                'blue' => $this->blue * $sub_color->blue,  
+                'red' => $this->red * $multiplier,
+                'green' => $this->green * $multiplier,
+                'blue' => $this->blue * $multiplier,  
             ]);
             return ($newColor);
         }
     }
-
 ?>
