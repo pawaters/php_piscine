@@ -21,7 +21,7 @@
 
         public function __construct(array $color)
         {
-            if(!isset($color['rgb'])
+            if(!isset($color['rgb']))
             {
                 $this->blue = (int)$color['blue'];
                 $this->green = (int)$color['green'];
