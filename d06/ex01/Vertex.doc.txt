@@ -1,0 +1,24 @@
+<- Vertex ----------------------------------------------------------------------
+The Vertex class represents a point, usually on a vector.
+It will havet the 3 usual coordinates, as well as w, which I undersand as the
+coefficient you can easily apply to the coordinates for differentical geometrical
+manipulations: transpositions, rotations etc...
+Of course, color is the class we use in the previous exercise.
+
+INPUT: array( 'x' => (int), 'y' => (int), 'z' => (int), 'color' => class color ).
+
+The class includes the standard from previous exercise:
+- doc
+- toString
+- verbose 
+- construct
+- destruct
+
+It includes also setter and getter methods which is a standard in general in OOP:
+getX(), setX($x),
+getY(), setY($y),
+getZ(), setZ($z),
+getW(), setW($w),
+getColor(), setColor($color);
+
+---------------------------------------------------------------------- Vertex ->
