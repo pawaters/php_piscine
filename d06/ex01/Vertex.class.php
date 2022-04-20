@@ -10,7 +10,7 @@ class Vertex {
 	private $_color;
 
 	public static function doc() {
-        echo file_get_contents("Vertex.doc.txt");
+        echo (PHP_EOL . file_get_contents("Vertex.doc.txt"));
 	}
 
     public function __toString() {
