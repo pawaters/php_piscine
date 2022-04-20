@@ -7,11 +7,11 @@ INPUT: two vertices:
 The class has the following methods on top of the standard ones of previous classes:
 
 float magnitude();
-Returns the length of the vector
+Returns the length of the vector. formula =√(x^2 + y^2 + z^2)
 
 Vector normalize();
-Returns a normalized version of the vector. If the vector is already normalized
-it returns a fresh copy of the vector.
+take the vector, keep it pointing in same direction, change length to 1.
+If the vector is already normalized, it returns a fresh copy of the vector.
 
 Vector add( Vector $rhs );
 Returns the sum of both vectors.
